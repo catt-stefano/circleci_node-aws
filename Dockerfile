@@ -6,4 +6,4 @@ RUN sudo pip install awscli
 # Install Chrome
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 RUN sudo dpkg -i google-chrome-stable_current_amd64.deb; apt-get -fy install
-export CHROME_BIN=/usr/bin/google-chrome
+RUN export CHROME_BIN=/usr/bin/google-chrome
